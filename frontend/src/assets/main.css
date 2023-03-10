@@ -1,0 +1,80 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.table thead th {
+  font-weight: bold;
+}
+
+.form-control {
+  display: inline-block;
+}
+
+.select-category {
+  width: 40%;
+  margin: 10px;
+}
+
+.button {
+  margin: 10px 0px 20px;
+}
+
+.row-table {
+  width: 770px;
+}
